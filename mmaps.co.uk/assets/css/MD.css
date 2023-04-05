@@ -1,0 +1,159 @@
+/*
+.body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+*/
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h6 {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+.fcontainer{
+    display: flex;
+    border: none;
+   /* border: 2px solid rgb(42, 40, 40); */
+    background-color: orange;
+    height: 65vh;
+   /* flex-direction: row; */
+   justify-content: center;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 24px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0.1);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(55, 52, 56);
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #000;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.text-data .name {
+    font-size: 15px;
+    font-weight: 400;
+}
+.text-data .job {
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 10px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover {
+    background-color: orange;
+}
+
+
