@@ -206,4 +206,111 @@ img {
   .profile-card li a:hover {
     color: #000;
   }
-  
+
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+button[type=submit] {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-content p {
+  margin: 10px 0 20px;
+  font-size: 16px;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card-content a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-image {
+  filter: blur(10px);
+}
