@@ -156,4 +156,54 @@ img {
     background-color: orange;
 }
 
-
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-card img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card h3 {
+    margin: 0;
+  }
+  
+  .profile-card p {
+    color: #777;
+    margin: 10px 0 20px;
+  }
+  
+  .profile-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-card li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .profile-card li a {
+    color: #777;
+    text-decoration: none;
+  }
+  
+  .profile-card li a:hover {
+    color: #000;
+  }
+  
